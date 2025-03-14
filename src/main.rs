@@ -1,4 +1,4 @@
-use::rust_sc2::prelude::*;
+use ::rust_sc2::prelude::*;
 
 #[bot]
 #[derive(Default)]
@@ -19,13 +19,8 @@ impl Player for WorkerRush {
 fn main() -> SC2Result<()> {
     static MAP_NAME: &str = "AcropolisAIE";
     let lauch_options = Default::default();
-    let computer =  Computer::new(Race::Random, Difficulty::Easy, None);
+    let computer = Computer::new(Race::Random, Difficulty::Easy, None);
 
     let mut agent = WorkerRush::default();
-    run_vs_computer(
-        &mut agent, 
-        computer, 
-        MAP_NAME,
-        lauch_options,
-    )
+    run_vs_computer(&mut agent, computer, MAP_NAME, lauch_options)
 }
