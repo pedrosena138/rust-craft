@@ -1,4 +1,4 @@
-use ::rust_sc2::prelude::{bot, Player, PlayerSettings, Race, Target, SC2Result};
+use ::rust_sc2::prelude::{Player, PlayerSettings, Race, SC2Result, Target, bot};
 
 #[bot]
 #[derive(Default)]
